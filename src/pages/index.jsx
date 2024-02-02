@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="keywords" content="2023 e 2024" />
       </Head>
       <StyledProdutos>
-        <h1>Filmes recentes - Trailers</h1>
+        <h2>Filmes recentes - Trailers</h2>
 
         <Container>
           <StyledSlider>
@@ -61,7 +61,7 @@ export default function Home() {
           </StyledSlider>
           <br />
 
-          <h1>Resenhas Críticas:</h1>
+          <h3>Resenhas Críticas:</h3>
           <Card />
         </Container>
       </StyledProdutos>
@@ -70,13 +70,20 @@ export default function Home() {
 }
 
 const StyledProdutos = styled.section`
-  h1::before {
+  h2::before {
     content: "🎥 ";
   }
   article {
     padding: 1rem;
   }
+
+  @media screen and (max-width: 768px) {
+    h1::before {
+      content: ""; /* Remove emoji before title on smaller screens */
+    }
+  }
 `;
+
 const StyledSlider = styled.div`
   margin: 20px 0;
 
@@ -96,8 +103,14 @@ const StyledSlider = styled.div`
     border-radius: 8px;
   }
   iframe {
-    width: 100%; // Set the width to 100%
-    height: 500px; // Adjust the height as needed
-    border-radius: 8px; // Apply border-radius if desired
+    width: 100%;
+    height: 250px; /* Adjust the height for smaller screens */
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    iframe {
+      height: 150px; /* Adjust the height for even smaller screens */
+    }
   }
 `;
