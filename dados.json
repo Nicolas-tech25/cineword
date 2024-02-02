@@ -1,0 +1,114 @@
+{
+  "posts": {
+    "-NpdnETtiW8hWvuvOxM-": {
+      "imagem": "/images/Pesadelo.jpg",
+      "titulo": "Pesadelo na Rua Elm",
+      "subtitulo": "Não durma, Freddy está à solta",
+      "curiosidade": "O personagem Freddy Krueger se tornou um ícone do cinema de terror e é conhecido por assombrar os sonhos de suas vítimas.",
+      "diretor": "Wes Craven",
+      "categoria": "Terror pra cagões"
+    },
+    "-NpdnETtPzG8BzqwHvb5": {
+      "imagem": "/images/Iluminado.jpg",
+      "titulo": "O Iluminado",
+      "subtitulo": "A insanidade em um hotel isolado",
+      "curiosidade": "O filme é baseado no livro homônimo de Stephen King e é conhecido por suas cenas icônicas, como o elevador jorrando sangue.",
+      "diretor": "Stanley Kubrick",
+      "categoria": "Terror pra ficar desconfortável"
+    },
+    "-NpdnETtttA4Hr3gbu6B": {
+      "imagem": "/images/Panico.jpg",
+      "titulo": "Pânico",
+      "subtitulo": "Quem está por trás da máscara?",
+      "curiosidade": "Pânico revitalizou o gênero de filmes slasher nos anos 90 e é conhecido por seu humor metaficcional e reviravoltas surpreendentes.",
+      "diretor": "Wes Craven",
+      "categoria": "Terror pra cagões"
+    },
+    "-NpdnETt39mx0yuUILao": {
+      "imagem": "/images/Bruxa.jpg",
+      "titulo": "A Bruxa",
+      "subtitulo": "A floresta esconde segredos sombrios",
+      "curiosidade": "A Bruxa é elogiado por sua atmosfera sombria e sua fidelidade à linguagem e costumes da Nova Inglaterra do século XVII.",
+      "diretor": "Robert Eggers",
+      "categoria": "Terror pra ficar desconfortável"
+    },
+    "-NpdnETtCkR7T3veyCCp": {
+      "imagem": "/images/Massacre.jpg",
+      "titulo": "Massacre da Serra Elétrica",
+      "subtitulo": "O terror rural texano",
+      "curiosidade": "O filme é inspirado em eventos reais, mas sua narrativa é ficcional. Leatherface se tornou um dos vilões mais temidos do cinema.",
+      "diretor": "Tobe Hooper",
+      "categoria": "Chuva de sangue"
+    },
+    "-NpdnETt2X7_Vc4h3qxC": {
+      "imagem": "/images/Paranormal.jpg",
+      "titulo": "Atividade Paranormal",
+      "subtitulo": "O mal se manifesta em casa",
+      "curiosidade": "Atividade Paranormal foi elogiado por seu baixo orçamento e abordagem de filmagem encontrada, tornando-se um sucesso de bilheteria.",
+      "diretor": "Oren Peli",
+      "categoria": "Terror pra cagões"
+    },
+    "-NpdnETt9V7tFu1Ph1R5": {
+      "imagem": "/images/Jogos.jpg",
+      "titulo": "Jogos Mortais",
+      "subtitulo": "Você quer jogar um jogo?",
+      "curiosidade": "A franquia Jogos Mortais é conhecida por suas reviravoltas elaboradas e armadilhas mortais, sendo um marco no gênero de terror psicológico.",
+      "diretor": "James Wan",
+      "categoria": "Chuva de sangue"
+    },
+    "-NpdnETtc_6g6EFWwJN9": {
+      "imagem": "/images/Sexto.jpg",
+      "titulo": "O Sexto Sentido",
+      "subtitulo": "Eu vejo pessoas mortas",
+      "curiosidade": "O Sexto Sentido é conhecido por seu final surpreendente e pela atuação marcante de Haley Joel Osment.",
+      "diretor": "M. Night Shyamalan",
+      "categoria": "Terror pra ficar desconfortável"
+    },
+    "-NpdnETtAVTqZ89-3fsB": {
+      "imagem": "/images/Blair.jpg",
+      "titulo": "Bruxa de Blair",
+      "subtitulo": "O desaparecimento na floresta",
+      "curiosidade": "Bruxa de Blair popularizou o estilo de filmagem encontrado e marketing viral, criando um fenômeno cultural.",
+      "diretor": "Daniel Myrick, Eduardo Sánchez",
+      "categoria": "Mocumentary"
+    },
+    "-NpdnETtUAsuSm_QE7Cb": {
+      "imagem": "/images/Exorcista.jpg",
+      "titulo": "O Exorcista",
+      "subtitulo": "A possessão demoníaca",
+      "curiosidade": "O Exorcista é considerado um dos filmes mais assustadores de todos os tempos e foi indicado a 10 Oscars.",
+      "diretor": "William Friedkin",
+      "categoria": "Terror pra cagões"
+    },
+    "-NpdnETt4rQTtwLbC1iz": {
+      "imagem": "/images/Babadook.jpg",
+      "titulo": "O Babadook",
+      "subtitulo": "Não olhe, ele está lá fora",
+      "curiosidade": "O Babadook recebeu aclamação crítica por suas performances e abordagem psicológica, explorando temas de luto e medo.",
+      "diretor": "Jennifer Kent",
+      "categoria": "Terror pra ficar desconfortável"
+    },
+    "-NpdnETtTTGBh8iR3p4B": {
+      "imagem": "/images/Rec.jpg",
+      "titulo": "Rec",
+      "subtitulo": "Presos no prédio do terror",
+      "curiosidade": "Rec é um filme de terror espanhol conhecido por sua abordagem de estilo documentário e intensidade crescente.",
+      "diretor": "Jaume Balagueró, Paco Plaza",
+      "categoria": "Mocumentary"
+    }
+  },
+  "categorias": {
+    "cat1": {
+      "nome": "Terror pra cagões"
+    },
+    "cat2": {
+      "nome": "Terror pra ficar desconfortável"
+    },
+    "cat3": {
+      "nome": "Chuva de sangue"
+    },
+    "cat4": {
+      "nome": "Mocumentary"
+    }
+  }
+}
