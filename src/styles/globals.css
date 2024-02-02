@@ -1,33 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* Variáveis CSS */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --cor-primaria-fundo: #FCAE1E;
+  --cor-primaria-fundo-hover: #030226;
+  --cor-primaria: #f2f2f2;
+  --cor-primaria-hover: #ebebeb;
+  --cor-secundaria-fundo: #4ba3c3;
+  --cor-secundaria-fundo-hover: #d21404;
+  --cor-secundaria: #e4e3f2;
+  --cor-secundaria-hover: #e2e2eb;
+  --sombra-box: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --borda-arredondada: 0.5rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  font-size: 16px;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #6b6869;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  /* Propriedades recomendadas para
+  minimizar a chance de serrilhamento de fontes
+  em certos navegadores/dispositivos */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fjalla One", sans-serif;
+}
+h2 {
+  margin: 1rem 0;
+  color: #262626;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  box-shadow: var(--sombra-box);
+  border-radius: var(--borda-arredondada);
+}
+.limitador {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
 }
