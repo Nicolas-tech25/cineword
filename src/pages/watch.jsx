@@ -6,7 +6,6 @@ import serverApi from "./api/server";
 import ListaCategorias from "@/components/ListaCategorias";
 import Container from "@/components/ui/Container";
 
-
 export async function getStaticProps() {
   console.log("Código de servidor (não aprece no Cliente)...");
   try {
@@ -61,7 +60,6 @@ export default function Watch({ posts, categorias }) {
     setListaDePosts(postsFiltrados);
     setFiltroAtivo(true);
 
- 
     setCategoriaAtiva(categoriaEscolhida);
   };
   const limparFiltro = () => {
@@ -83,20 +81,14 @@ export default function Watch({ posts, categorias }) {
       <StyledHome>
         <h2>Conheça o mundo do horror por camadas:</h2>
 
-      <Container>
-        <h3>Terror pra cagões:</h3>
-        <ListaCategorias
-          categorias={categorias}
-          aplicarFiltro={aplicarFiltro}
-          limparFiltro={limparFiltro}
-          filtroAtivo={filtroAtivo}
-          categoriaAtiva={categoriaAtiva}
-        />
-        <ListaPosts posts={listaDePosts} />
-        <h3>Terror pra ficar desconfortável:</h3>
-        <h3>Chuva de sangue:</h3>
-        <h3>Mocumentary:</h3>
-      </Container>
+        <Container>
+          <h3>Terror pra cagões:</h3>
+
+          <ListaPosts posts={listaDePosts} />
+          <h3>Terror pra ficar desconfortável:</h3>
+          <h3>Chuva de sangue:</h3>
+          <h3>Mocumentary:</h3>
+        </Container>
       </StyledHome>
     </>
   );
@@ -106,4 +98,4 @@ const StyledHome = styled.section`
   h2::before {
     content: "🎬 ";
   }
-`
+`;

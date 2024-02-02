@@ -12,36 +12,28 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000, // Tempo de exibição de cada slide em milissegundos
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
 
   return (
     <>
       <Head>
         <title>CineWorld - Home</title>
-        <meta
-          name="description"
-          content="Conteúdos de filmes recentes"
-        />
+        <meta name="description" content="Conteúdos de filmes recentes" />
         <meta name="keywords" content="2023 e 2024" />
       </Head>
       <StyledProdutos>
         <h2>Filmes recentes</h2>
 
         <Container>
-          <article>
+          <StyledSlider>
             <Slider {...sliderSettings}>
-              
-              <div>
-                <img src="images/Infinity.jpg" alt="Slide 2" />
-              </div>
-              <div>
-                <img src="images/Evil-dead.jpg" alt="Slide 1" />
-              </div>
-              {/* Adicione mais imagens conforme necessário */}
+              <img src="/images/Evil-dead.jpg" alt="Movie 1" />
+              <img src="/images/Infinity.jpg" alt="Movie 2" />
+              <img src="/images/Pobres-criaturas.jpg" alt="Movie 3" />
             </Slider>
-          </article>
+          </StyledSlider>
         </Container>
       </StyledProdutos>
     </>
@@ -55,9 +47,23 @@ const StyledProdutos = styled.section`
   article {
     padding: 1rem;
   }
-  /* Estilos adicionais conforme necessário */
-  .slick-slider {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    margin: 0 auto;
+`;
+const StyledSlider = styled.div`
+  margin: 20px 0;
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 20px;
+    color: #fff;
+    display: none;
+  }
+
+  img {
+    width: 50%;
+    border-radius: 8px;
   }
 `;
