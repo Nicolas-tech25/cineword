@@ -11,7 +11,7 @@ export default function Cabecalho() {
           <Link href="/">
             <Image
               src="/images/logo.png"
-              width={48}
+              width={65}
               height={48}
               alt="Logo"
             />

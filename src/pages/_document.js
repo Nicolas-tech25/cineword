@@ -13,7 +13,7 @@ export default function Document() {
         <meta name="theme-color" content="#000000" />
         <link
           rel="shortcut icon"
-          href="/images/favicon.png"
+          href="/images/logo.png"
           type="image/png"
           sizes="256x256"
         />
