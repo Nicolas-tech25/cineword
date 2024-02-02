@@ -1,0 +1,16 @@
+{
+  "categorias": {
+    "cat1": {
+      "nome": "Terror pra cagões"
+    },
+    "cat2": {
+      "nome": "Terror pra ficar desconfortável"
+    },
+    "cat3": {
+      "nome": "Chuva de sangue"
+    },
+    "cat4": {
+      "nome": "Mocumentary"
+    }
+  }
+}

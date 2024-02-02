@@ -27,10 +27,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  /* Paths fica vazio pois todos os caminhos devem ser gerados sobre demanda, ou seja no momento que a página foi aberta */
   return {
     paths: [],
-    /* fallback fica como "blocking" para garantir que a página será renderizada somente após da conclusão da geração dos caminhos e dos dados */
     fallback: "blocking",
   };
 }
@@ -46,8 +44,19 @@ export default function Post({ post }) {
       <StyledPost>
         <h2>{post.titulo}</h2>
         <Container>
-          <h3>{post.categoria}</h3>
-          <p>{post.descricao}</p>
+          <img src={post.imagem} alt="" />
+          <h3>
+            Diretor: <i>{post.diretor}</i>
+          </h3>
+          <p>
+            <b>Curiosidade:</b> {post.curiosidade}
+          </p>
+          <p>
+            <i>
+              <b>Categoria: </b>
+            </i>
+            {post.categoria}
+          </p>
         </Container>
       </StyledPost>
     </>

@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container";
 import Head from "next/head";
+import Card from "@/components/ui/Card";
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,36 +13,56 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000, // Tempo de exibição de cada slide em milissegundos
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
 
   return (
     <>
       <Head>
         <title>CineWorld - Home</title>
-        <meta
-          name="description"
-          content="Conteúdos de filmes recentes"
-        />
+        <meta name="description" content="Conteúdos de filmes recentes" />
         <meta name="keywords" content="2023 e 2024" />
       </Head>
       <StyledProdutos>
-        <h2>Filmes recentes</h2>
+        <h2>Filmes recentes - Trailers</h2>
 
         <Container>
-          <article>
+          <StyledSlider>
             <Slider {...sliderSettings}>
-              
-              <div>
-                <img src="images/Infinity.jpg" alt="Slide 2" />
-              </div>
-              <div>
-                <img src="images/Evil-dead.jpg" alt="Slide 1" />
-              </div>
-              {/* Adicione mais imagens conforme necessário */}
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/smTK_AeAPHs?si=GCw1XC8apDVUbnc6&amp;controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/YrTnV6gNzno?si=5AfqIdNt33XQB05W&amp;controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/FNZe6nyKbqk?si=gZF5xfAasnN0Bdz9&amp;controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </Slider>
-          </article>
+          </StyledSlider>
+          <br />
+
+          <h3>Resenhas Críticas:</h3>
+          <Card />
         </Container>
       </StyledProdutos>
     </>
@@ -55,9 +76,41 @@ const StyledProdutos = styled.section`
   article {
     padding: 1rem;
   }
-  /* Estilos adicionais conforme necessário */
-  .slick-slider {
-    width: 80%; /* Ajuste a largura conforme necessário */
-    margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    h1::before {
+      content: ""; /* Remove emoji before title on smaller screens */
+    }
+  }
+`;
+
+const StyledSlider = styled.div`
+  margin: 20px 0;
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 20px;
+    color: #fff;
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  iframe {
+    width: 100%;
+    height: 250px; /* Adjust the height for smaller screens */
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    iframe {
+      height: 150px; /* Adjust the height for even smaller screens */
+    }
   }
 `;
