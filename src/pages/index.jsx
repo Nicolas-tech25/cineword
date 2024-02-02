@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CineWord - Home</title>
+        <title>CineWorld - Home</title>
         <meta
           name="description"
           content="Conteúdos de filmes recentes"

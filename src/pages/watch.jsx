@@ -72,7 +72,7 @@ export default function Watch({ posts, categorias }) {
   return (
     <>
       <Head>
-        <title>Cine Word</title>
+        <title>CineWorld - Watch</title>
         <meta
           name="description"
           content="Site que fala de filmes e suas curiosidades"

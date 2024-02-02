@@ -15,7 +15,7 @@ export default function Cabecalho() {
               height={48}
               alt="Logo"
             />
-            CineWord
+            CineWorld
           </Link>
         </h1>
         <Menu />
