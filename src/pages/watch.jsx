@@ -4,6 +4,7 @@ import ListaPosts from "@/components/ListaPost.jsx";
 import { useState } from "react";
 import serverApi from "./api/server";
 import ListaCategorias from "@/components/ListaCategorias";
+import Container from "@/components/ui/Container";
 
 
 export async function getStaticProps() {
@@ -80,8 +81,10 @@ export default function Watch({ posts, categorias }) {
         <meta name="keywords" content="Movies,icebergs,curiosidades" />
       </Head>
       <StyledHome>
-        <h2>Conheça o mundo do horror por camadas: {listaDePosts.length}</h2>
+        <h2>Conheça o mundo do horror por camadas:</h2>
 
+      <Container>
+        <h3>Terror pra cagões:</h3>
         <ListaCategorias
           categorias={categorias}
           aplicarFiltro={aplicarFiltro}
@@ -90,6 +93,10 @@ export default function Watch({ posts, categorias }) {
           categoriaAtiva={categoriaAtiva}
         />
         <ListaPosts posts={listaDePosts} />
+        <h3>Terror pra ficar desconfortável:</h3>
+        <h3>Chuva de sangue:</h3>
+        <h3>Mocumentary:</h3>
+      </Container>
       </StyledHome>
     </>
   );
