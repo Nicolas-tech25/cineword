@@ -53,7 +53,7 @@ export default function Watch({ posts }) {
         />
         <meta name="keywords" content="Movies,icebergs,curiosidades" />
       </Head>
-      <StyledHome>
+      <StyledWatch>
         <h1>Conheça o mundo do horror com algumas curiosidades:</h1>
 
         <Container>
@@ -64,12 +64,12 @@ export default function Watch({ posts }) {
           <h3>Chuva de sangue:</h3>
           <h3>Mocumentary:</h3>
         </Container>
-      </StyledHome>
+      </StyledWatch>
     </>
   );
 }
 
-const StyledHome = styled.section`
+const StyledWatch = styled.section`
   h2::before {
     content: "🎬 ";
   }

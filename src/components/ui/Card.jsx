@@ -59,16 +59,16 @@ export default function Container({}) {
 
 const CardContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-arround;
+  margin: 10px;
+  gap: 5%;
+  flex-wrap: wrap;
 `;
 
 const StyledCards = styled.article`
-  width: calc(
-    33.33% - 1rem
-  ); /* Adjust the width based on the number of cards and margin */
+  width: 45%;
   background-color: var(--cor-primaria-fundo);
   box-shadow: var(--sombra-box);
   border-radius: var(--borda-arredondada);
-  padding: 1rem;
-  margin-bottom: 1rem; /* Add margin between cards */
+  margin-bottom: 1rem; 
 `;
